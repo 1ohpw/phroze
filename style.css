@@ -1,4 +1,57 @@
+html, body {
+  height: 100%;
+}
+
 h1 {
-  color: Blue;
+  color: blue;
   font-family: cursive;
+  text-align: center;
+}
+
+#img-container {
+  width: 75%;
+  height: 75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: 50% 50%;
+  grid-gap: 2px;
+  grid-template-areas: "img-0 img-1 img-2"
+                        "img-0 img-3 img-4";
+}
+
+#gallery-img-0 {
+  grid-area: "img-0";
+  grid-row: span 2;
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+#gallery-img-1 {
+  grid-area: "img-1";
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+#gallery-img-2 {
+  grid-area: "img-2";
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+#gallery-img-3 {
+  grid-area: "img-3";
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+#gallery-img-4 {
+  grid-area: "img-4";
+  width:100%;
+  height:100%;
+  object-fit: cover;
 }
